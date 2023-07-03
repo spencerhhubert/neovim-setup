@@ -1,5 +1,7 @@
 ## install
 
+`mkdir ~/.config/nvim && cd ~/.config/nvim && git clone https://github.com/spencerhhubert/neovim-setup .`
+
 should then be able to go into nvim, navigate to `lua/spencer/packer.lua` and run `:so` and `:PackerSync`
 
 `:TSUpdate` updates treesitter, meaning that needs to be run if a new language is added to `after/plugin/treesitter.lua`
