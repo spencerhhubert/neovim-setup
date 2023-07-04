@@ -9,6 +9,14 @@ should then be able to go into nvim, navigate to `lua/spencer/packer.lua` and ru
 need ripgrep for the grep finder
 `sudo apt  install ripgrep`
 
+copilot
+```
+sudo apt install nodejs
+git clone https://github.com/github/copilot.vim.git \
+  ~/.config/nvim/pack/github/start/copilot.vim
+```
+run `:Copilot setup` in nvim
+
 ## random helpful info
 
 might need nightly neovim built
