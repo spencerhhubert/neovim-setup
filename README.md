@@ -4,6 +4,9 @@ should then be able to go into nvim, navigate to `lua/spencer/packer.lua` and ru
 
 `:TSUpdate` updates treesitter, meaning that needs to be run if a new language is added to `after/plugin/treesitter.lua`
 
+need ripgrep for the grep finder
+`sudo apt  install ripgrep`
+
 ## random helpful info
 
 might need nightly neovim built
