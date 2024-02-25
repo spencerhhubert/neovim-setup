@@ -3,7 +3,6 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 vim.cmd("source ~/.config/nvim/old_vim_rc.vim")
---
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -72,3 +71,11 @@ vim.keymap.set('i', '<C-S>', '<Plug>(copilot-accept-line)')
 vim.keymap.set('i', '<C-D>', '<Plug>(copilot-suggest)')
 vim.keymap.set("i", "<C-;>", "copilot#Next()", {expr=true, silent=true, noremap=true})
 vim.keymap.set("i", "<C-'>", "copilot#Previous()", {expr=true, silent=true, noremap=true})
+
+--tmux
+require("tmux").setup({
+  copy_sync = {
+    enable = true,
+    redirect_to_clipboard = true,
+  },
+})
