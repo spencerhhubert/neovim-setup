@@ -3,6 +3,7 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 vim.cmd("source ~/.config/nvim/old_vim_rc.vim")
+--
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -49,7 +50,7 @@ require("nvim-tree").setup({
         file = false,
         folder = false,
 	folder_arrow = false,
-	git = false,
+	git = true,
 	modified = false,
 	diagnostics = false,
 	bookmarks = false,
@@ -57,9 +58,17 @@ require("nvim-tree").setup({
     }
   },
   filters = {
-    dotfiles = true,
+    dotfiles = false,
+    git_ignored = false,
   },
 })
 
 --lsp
 require'lspconfig'.pyright.setup{}
+
+--copilot
+vim.keymap.set('i', '<C-W>', '<Plug>(copilot-accept-word)')
+vim.keymap.set('i', '<C-S>', '<Plug>(copilot-accept-line)')
+vim.keymap.set('i', '<C-D>', '<Plug>(copilot-suggest)')
+vim.keymap.set("i", "<C-;>", "copilot#Next()", {expr=true, silent=true, noremap=true})
+vim.keymap.set("i", "<C-'>", "copilot#Previous()", {expr=true, silent=true, noremap=true})
