@@ -14,8 +14,8 @@ set incsearch
 set showmatch
 
 set expandtab
-set ts=4
-set shiftwidth=4
+set ts=2
+set shiftwidth=2
 
 autocmd FileType javascript,html,typescript,haskell,svelte setlocal shiftwidth=2
 autocmd FileType javascript,html,typescript,haskell,svelte setlocal ts=2
