@@ -22,12 +22,17 @@ vim.g.mapleader = " "
 
 require("lazy").setup("plugins")
 
+--colors
+vim.cmd[[colorscheme tokyonight]]
+
+--telescope
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>gg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
+--tree
 vim.keymap.set('n', '<leader>tt', ':NvimTreeOpen<CR>', {})
 
 require("nvim-tree").setup({
@@ -55,3 +60,6 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
+
+--lsp
+require'lspconfig'.pyright.setup{}
