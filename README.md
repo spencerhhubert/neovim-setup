@@ -1,6 +1,10 @@
 ## lsps
 ```
 pip install pyright
+#I'm too lazy to make these not apt commands, you get the idea
+sudo apt install nodejs npm
+sudo npm install -g typescript typescript-language-server
+npm install -g svelte-language-server
 ```
 
 ## markdown preview

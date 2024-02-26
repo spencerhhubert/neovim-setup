@@ -21,3 +21,4 @@ autocmd FileType javascript,html,typescript,haskell,svelte setlocal shiftwidth=2
 autocmd FileType javascript,html,typescript,haskell,svelte setlocal ts=2
 autocmd BufNewFile,BufRead *.js,*.html,*ts,*svelte,*hs setlocal shiftwidth=2
 autocmd BufNewFile,BufRead *.js,*.html,*ts,*svelte,*hs setlocal ts=2
+au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
