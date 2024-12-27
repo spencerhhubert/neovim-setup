@@ -35,3 +35,10 @@ brew install reattach-to-user-namespace
 This will only work inside Tmux because it 1) unifies the copy paste registers w/ Tmux and 2) relies on tmux to copy to the system clipboard
 
 In iTerm2, go to Preferences > General > Selection and check "Applications in terminal may access clipboard"
+
+##
+```
+brew install ripgrep
+```
+
+brew install --cask font-jetbrains-mono-nerd-font
