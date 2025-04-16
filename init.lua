@@ -144,7 +144,7 @@ require("tmux").setup({
 --something they recommended idk
 vim.opt.laststatus = 3
 
-vim.opt.background = 'light'   -- Set light background
+vim.opt.background = 'dark'
 
 -- Set GUI font to JetBrains Mono Nerd Font
 vim.opt.guifont = "JetBrainsMono Nerd Font:h11"
