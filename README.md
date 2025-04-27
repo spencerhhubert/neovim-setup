@@ -42,3 +42,9 @@ brew install ripgrep
 ```
 
 brew install --cask font-jetbrains-mono-nerd-font
+
+# font fallback
+fixes broken markdown rendering
+```
+brew install --cask font-jetbrains-mono-nerd-font
+```
